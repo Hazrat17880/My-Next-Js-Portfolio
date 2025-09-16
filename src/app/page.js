@@ -1,16 +1,14 @@
 // app/page.js (or pages/index.js depending on your setup)
-
-import React from "react";
-import Hero from "@/Components/home/HeroSection";
-import About from "@/Components/home/AboutMe";
-import Skills from "@/Components/home/Skills";
-import Projects from "@/Components/home/FeatureProject";
-import Experience from "@/Components/home/Experience";
-import Education from "@/Components/home/Educations";
-import Certificates from "@/Components/home/Certificates";
-import Languages from "@/Components/home/Languages";
-import Stats from "@/Components/home/Stats";
-import CTA from "@/Components/home/CTA";
+import Hero from "../Components/home/HeroSection";
+import About from "../Components/home/AboutMe";
+import Skills from "../Components/home/Skills";
+import Projects from "../Components/home/FeatureProject";
+import Experience from "../Components/home/Experience";
+import Education from "../Components/home/Educations";
+import Certificates from "../Components/home/Certificates";
+import Languages from "../Components/home/Languages";
+import Stats from "../Components/home/Stats";
+import CTA from "../Components/home/CTA";
 
 export default function HomePage() {
   return (
