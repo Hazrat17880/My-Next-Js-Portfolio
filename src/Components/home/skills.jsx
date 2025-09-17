@@ -2,12 +2,21 @@
 "use client";
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaFigma } from "react-icons/fa";
-import { 
-  SiNextdotjs, SiTailwindcss, SiMongodb, SiExpress, 
-  SiJavascript, SiTypescript, SiGit, SiFirebase, 
-  SiRedux, SiVercel, SiPostman, SiVisualstudiocode 
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiExpress,
+  SiJavascript,
+  SiTypescript,
+  SiGit,
+  SiFirebase,
+  SiRedux,
+  SiVercel,
+  SiPostman
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import { VscVscode } from "react-icons/vsc";
 
 const skillsData = [
   { name: "React", icon: <FaReact className="text-sky-500" />, level: 90, color: "from-sky-400 to-sky-600" },
@@ -24,7 +33,7 @@ const skillsData = [
   { name: "Redux", icon: <SiRedux className="text-purple-500" />, level: 80, color: "from-purple-500 to-purple-700" },
   { name: "Framer Motion", icon: <TbBrandFramerMotion className="text-pink-500" />, level: 85, color: "from-pink-400 to-pink-600" },
   { name: "Vercel", icon: <SiVercel className="text-black dark:text-white" />, level: 90, color: "from-gray-600 to-gray-800 dark:from-white dark:to-gray-400" },
-  { name: "VS Code", icon: <SiVisualstudiocode className="text-blue-500" />, level: 95, color: "from-blue-500 to-blue-700" },
+  { name: "VS Code", icon: <VscVscode className="text-blue-500" />, level: 95, color: "from-blue-500 to-blue-700" },
   { name: "Postman", icon: <SiPostman className="text-orange-500" />, level: 75, color: "from-orange-500 to-orange-700" },
 ];
 
