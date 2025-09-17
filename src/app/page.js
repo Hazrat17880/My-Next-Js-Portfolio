@@ -20,7 +20,7 @@ export default function HomePage() {
       <section id="projects"><Projects /></section>
       <section id="experience"><Experience /></section>
       <section id="education"><Education /></section>
-      <section id="certificates"><Certificates /></section>
+      <section id="certificates" ><Certificates /></section>
       <section id="languages"><Languages /></section>
       <section id="stats"><Stats /></section>
       <section id="contact"><Contact /></section> {/* Add this line */}

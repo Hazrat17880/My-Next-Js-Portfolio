@@ -14,7 +14,7 @@ const navLinks = [
 ];
 
 const moreLinks = [
-  { name: 'Services', href: '#' },
+  { name: 'Services', href: '/services' },
   { name: 'Blog', href: '/blog' },
   { name: 'Testimonials', href: '/testimonials' },
 ];
@@ -117,7 +117,7 @@ export default function Navbar() {
             ))}
 
             {/* More Dropdown */}
-            {/* <div className="relative" ref={dropdownRef}>
+            <div className="relative" ref={dropdownRef}>
               <button
                 onClick={toggleMoreDropdown}
                 className="flex items-center px-4 py-2 font-medium text-slate-700 dark:text-slate-300"
@@ -153,12 +153,12 @@ export default function Navbar() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div> */}
+            </div>
           </div>
 
           {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-3">
-            <motion.button
+            {/* <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={toggleTheme}
@@ -174,10 +174,10 @@ export default function Navbar() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
               )}
-            </motion.button>
+            </motion.button> */}
 
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 transition-all shadow-md hover:shadow-lg flex items-center">
+              <Link href="/hazratusman.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 transition-all shadow-md hover:shadow-lg flex items-center">
                 Resume
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
