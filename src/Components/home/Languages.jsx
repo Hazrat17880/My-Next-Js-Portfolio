@@ -26,15 +26,8 @@ const languages = [
     description: "Native or bilingual proficiency",
     certified: true,
     icon: "🇦🇫"
-  },
-  { 
-    name: "Arabic", 
-    level: "Basic",
-    proficiency: 40,
-    description: "Elementary proficiency",
-    certified: false,
-    icon: "🇸🇦"
-  },
+  }
+ 
 ];
 
 // Helper function to determine color based on proficiency

@@ -38,7 +38,7 @@ function Counter({ from = 0, to, duration = 2, suffix = "", prefix = "" }) {
 const stats = [
   {
     id: 1,
-    value: 5,
+    value: 12,
     label: "Projects Completed",
     icon: <FaRocket className="text-blue-500" />,
     color: "from-blue-500 to-cyan-500",
@@ -46,7 +46,7 @@ const stats = [
   },
   {
     id: 2,
-    value: 3,
+    value: 4,
     label: "Happy Clients",
     icon: <FaUsers className="text-green-500" />,
     color: "from-green-500 to-emerald-500",
@@ -54,7 +54,7 @@ const stats = [
   },
   {
     id: 3,
-    value: 12,
+    value: 8,
     label: "Technologies",
     icon: <FaCode className="text-purple-500" />,
     color: "from-purple-500 to-pink-500",

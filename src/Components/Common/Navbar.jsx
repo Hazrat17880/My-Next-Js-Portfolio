@@ -14,7 +14,7 @@ const navLinks = [
 ];
 
 const moreLinks = [
-  { name: 'Services', href: '/services' },
+  { name: 'Services', href: '#' },
   { name: 'Blog', href: '/blog' },
   { name: 'Testimonials', href: '/testimonials' },
 ];
@@ -117,7 +117,7 @@ export default function Navbar() {
             ))}
 
             {/* More Dropdown */}
-            <div className="relative" ref={dropdownRef}>
+            {/* <div className="relative" ref={dropdownRef}>
               <button
                 onClick={toggleMoreDropdown}
                 className="flex items-center px-4 py-2 font-medium text-slate-700 dark:text-slate-300"
@@ -153,7 +153,7 @@ export default function Navbar() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
+            </div> */}
           </div>
 
           {/* Desktop CTA Buttons */}

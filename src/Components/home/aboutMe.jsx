@@ -112,7 +112,7 @@ export default function About() {
               className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed"
             >
               I'm a passionate <span className="font-semibold text-blue-600 dark:text-blue-400">MERN Stack & Next.js Developer</span> 
-              with <span className="font-semibold">3+ years</span> of experience building scalable, 
+              with <span className="font-semibold">2+ years</span> of experience building scalable, 
               user-friendly web applications. I focus on clean code, modern UI/UX, and performance 
               optimization to deliver seamless digital experiences.
             </motion.p>
@@ -126,7 +126,7 @@ export default function About() {
                 { icon: <FaCode className="text-blue-600" />, text: "Frontend Development" },
                 { icon: <FaServer className="text-purple-600" />, text: "Backend Development" },
                 { icon: <FaPalette className="text-blue-600" />, text: "UI/UX Design" },
-                { icon: <FaCloud className="text-purple-600" />, text: "DevOps & Deployment" },
+                { icon: <FaCloud className="text-purple-600" />, text: " Deployment" },
               ].map((skill, index) => (
                 <div key={index} className="flex items-center p-3 bg-slate-50 dark:bg-slate-700/50 rounded-lg">
                   <span className="text-xl mr-3">{skill.icon}</span>
@@ -141,9 +141,9 @@ export default function About() {
               className="grid grid-cols-3 gap-6 text-center mb-8"
             >
               {[
-                { number: "3+", label: "Years Experience", color: "text-blue-600 dark:text-blue-400" },
+                { number: "2+", label: "Years Experience", color: "text-blue-600 dark:text-blue-400" },
                 { number: "15+", label: "Projects Done", color: "text-purple-600 dark:text-purple-400" },
-                { number: "10+", label: "Happy Clients", color: "text-blue-600 dark:text-blue-400" },
+                { number: "7+", label: "Happy Clients", color: "text-blue-600 dark:text-blue-400" },
               ].map((stat, index) => (
                 <div key={index} className="bg-slate-50 dark:bg-slate-700/30 p-4 rounded-xl">
                   <h3 className={`text-3xl font-bold ${stat.color} mb-1`}>{stat.number}</h3>

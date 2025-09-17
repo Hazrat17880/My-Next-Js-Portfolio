@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaArrowRight, FaEnvelope, FaInstagram, FaYoutube, FaDiscord } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDownload, FaArrowRight, FaEnvelope, FaInstagram, FaYoutube, FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 export default function Hero() {
   // Animation variants
@@ -66,49 +66,49 @@ export default function Hero() {
     return () => clearTimeout(timer);
   }, [displayText, isDeleting, currentRole, roles, typingSpeed]);
 
-  // Social media links data
+  // Social media links data - Replaced Twitter and Discord with WhatsApp and Facebook
   const socialLinks = [
     { 
       icon: <FaGithub />, 
-      href: "https://github.com/yourusername", 
+      href: "https://github.com/Hazrat17880", 
       color: "hover:bg-gray-800 hover:text-white dark:hover:bg-white dark:hover:text-gray-800",
       label: "GitHub"
     },
     { 
       icon: <FaLinkedin />, 
-      href: "https://linkedin.com/in/yourusername", 
+      href: "https://www.linkedin.com/in/hazrat-usman-b35719232/", 
       color: "hover:bg-blue-700 hover:text-white dark:hover:bg-white dark:hover:text-blue-700",
       label: "LinkedIn"
     },
-    { 
-      icon: <FaTwitter />, 
-      href: "https://twitter.com/yourusername", 
-      color: "hover:bg-sky-500 hover:text-white dark:hover:bg-white dark:hover:text-sky-500",
-      label: "Twitter"
-    },
-    { 
-      icon: <FaEnvelope />, 
-      href: "mailto:your.email@example.com", 
-      color: "hover:bg-red-500 hover:text-white dark:hover:bg-white dark:hover:text-red-500",
-      label: "Email"
-    },
-    { 
-      icon: <FaInstagram />, 
-      href: "https://instagram.com/yourusername", 
-      color: "hover:bg-pink-600 hover:text-white dark:hover:bg-white dark:hover:text-pink-600",
-      label: "Instagram"
-    },
+   { 
+  icon: <FaWhatsapp />, 
+  href: "https://wa.me/923159449246", 
+  color: "hover:bg-green-500 hover:text-white dark:hover:bg-white dark:hover:text-green-500",
+  label: "WhatsApp"
+},
+   { 
+  icon: <FaEnvelope />, 
+  href: "mailto:hazratusman17880@gmail.com", 
+  color: "hover:bg-red-500 hover:text-white dark:hover:bg-white dark:hover:text-red-500",
+  label: "Email"
+},
+  { 
+  icon: <FaInstagram />, 
+  href: "https://www.instagram.com/hazrat7557?igsh=MTZ6ZmsxYjRpdXJmcQ==", 
+  color: "hover:bg-pink-600 hover:text-white dark:hover:bg-white dark:hover:text-pink-600",
+  label: "Instagram"
+},
     { 
       icon: <FaYoutube />, 
-      href: "https://youtube.com/yourchannel", 
+      href: "https://youtube.com/@hazratusman343?si=1byHWjlo8yzQRIl9", 
       color: "hover:bg-red-600 hover:text-white dark:hover:bg-white dark:hover:text-red-600",
       label: "YouTube"
     },
     { 
-      icon: <FaDiscord />, 
-      href: "https://discord.gg/yourinvite", 
-      color: "hover:bg-indigo-600 hover:text-white dark:hover:bg-white dark:hover:text-indigo-600",
-      label: "Discord"
+      icon: <FaFacebook />, 
+      href: "https://www.facebook.com/share/1CAv3mviAD/", 
+      color: "hover:bg-blue-600 hover:text-white dark:hover:bg-white dark:hover:text-blue-600",
+      label: "Facebook"
     },
   ];
 
@@ -186,7 +186,7 @@ export default function Hero() {
             <div className="w-44 h-44 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1.5 shadow-2xl">
               <div className="w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-slate-800">
                 <img
-                  src="/images/usman.jpg" // Fixed path - removed "public" prefix
+                  src="/images/usman.jpg"
                   alt="Hazrat Usman"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                 />

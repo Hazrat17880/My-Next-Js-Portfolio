@@ -8,6 +8,7 @@ import Education from "../Components/home/Educations"
 import Certificates from "../Components/home/Certificates"
 import Languages from "../Components/home/Languages"
 import Stats from "../Components/home/Stats"
+import Contact from "@/Components/home/Contant"
 import CTA from "../Components/home/CTA"
 
 export default function HomePage() {
@@ -22,6 +23,8 @@ export default function HomePage() {
       <section id="certificates"><Certificates /></section>
       <section id="languages"><Languages /></section>
       <section id="stats"><Stats /></section>
+      <section id="contact"><Contact /></section> {/* Add this line */}
+
       <section id="cta"><CTA /></section>
     </main>
   );

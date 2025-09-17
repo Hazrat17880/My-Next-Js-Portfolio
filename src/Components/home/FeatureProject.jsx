@@ -5,11 +5,29 @@ import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 
 const projects = [
   {
+    title: "Moovr - Ride Sharing & Delivery App",
+    desc: "A comprehensive transportation platform similar to Uber/Kareem. Users can book rides, send packages, work as drivers, and rent out their vehicles with real-time location tracking.",
+    tech: ["React Native", "Node.js", "Express.js", "MongoDB", "Google Maps API", "Firebase"],
+    img: "/project/moovr.jpg", // Make sure to add moovr.png to public/projects folder
+    github: "https://github.com/Hazrat17880/Moovr-Project-Frontend",
+    live: "#",
+    featured: true
+  },
+  {
+    title: "Salon Management System",
+    desc: "A Chinese client project for salon management with online appointment booking, staff management, payment processing, and customer relationship management features.",
+    tech: ["React.js", "Next.js", "MySQL", "Tailwind CSS"],
+    img: "/project/salon.PNG", // Make sure to add salon.png to public/projects folder
+    github: "https://github.com/Hazrat17880/salon-Management-system",
+    live: "https://saluns-v4kf-momu6f7h4-shahidjanamins-projects.vercel.app/",
+    featured: true
+  },
+  {
     title: "Tabligh Markaz App",
     desc: "A full-stack app for managing registrations, roles, email verification, authentication, and real-time tracking.",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB"],
-    img: "/images/projects/tabligh.png",
-    github: "https://github.com/yourusername/tabligh",
+    img: "/project/markaz.jpg",
+    github: "https://github.com/Hazrat17880/mern-markaz-app",
     live: "#",
     featured: true
   },
@@ -17,50 +35,55 @@ const projects = [
     title: "Scan and Eat – Smart Dining Solution",
     desc: "Final year project — web + Android app for QR-based menus, orders, payments, and admin panel.",
     tech: ["Flutter", "Firebase", "MERN Stack"],
-    img: "/images/projects/scanandeat.png",
-    github: "https://github.com/yourusername/scan-and-eat",
+    img: "/project/scan.jpeg",
+    github: "https://github.com/Hazrat17880/FYP-Scan-and-Eat",
     live: "#",
-    featured: true
+    featured: false
   },
   {
     title: "Quick Note – Note-Taking Web App",
     desc: "Secure note app with JWT auth, password recovery, search, and public/private note sharing.",
     tech: ["React.js", "Node.js", "MongoDB", "JWT"],
-    img: "/images/projects/quicknote.png",
-    github: "https://github.com/yourusername/quick-note",
-    live: "#"
+    img: "/project/notes.jpg",
+    github: "https://github.com/Hazrat17880/Quick-Note-CV",
+    live: "#",
+    featured: false
   },
   {
     title: "Abasyn Quora – Q&A Platform",
     desc: "Community-driven knowledge sharing platform with Q&A, answers, and discussions.",
     tech: ["React.js", "Express.js", "MongoDB"],
-    img: "/images/projects/quora.png",
-    github: "https://github.com/yourusername/abasyn-quora",
-    live: "#"
+    img: "/project/quora.jpg",
+    github: "https://github.com/Hazrat17880/Qoura-CV",
+    live: "#",
+    featured: false
   },
   {
     title: "Appointment Scheduler",
     desc: "App with calendar integration, real-time updates, and automated reminders for booking appointments.",
     tech: ["React.js", "Firebase", "Tailwind CSS"],
-    img: "/images/projects/scheduler.png",
-    github: "https://github.com/yourusername/scheduler",
-    live: "#"
+    img: "/project/appointment.jpg",
+    github: "https://github.com/Hazrat17880/Appointment-Schedular-cv",
+    live: "#",
+    featured: false
   },
   {
     title: "Bterm Application",
     desc: "Secure login (Google/Facebook), real-time search, detailed definitions, and clean responsive UI.",
     tech: ["React.js", "Node.js", "MongoDB"],
-    img: "/images/projects/bterm.png",
-    github: "https://github.com/yourusername/bterm",
-    live: "#"
+    img: "/project/bterm.jpg",
+    github: "https://github.com/Hazrat17880/Bterms",
+    live: "#",
+    featured: false
   },
   {
     title: "Portfolio Website",
     desc: "Personal portfolio showcasing skills, projects, and experience with animations and responsiveness.",
     tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    img: "/images/projects/portfolio.png",
-    github: "https://github.com/yourusername/portfolio",
-    live: "https://your-portfolio-demo.com"
+    img: "/project/portfolio.jpg",
+    github: "https://github.com/Hazrat17880/My-Next-Js-Portfolio",
+    live: "https://your-portfolio-demo.com",
+    featured: false
   }
 ];
 
@@ -102,7 +125,16 @@ export default function Projects() {
               {/* Image */}
               <div className="lg:w-1/2 relative">
                 <div className="relative w-full h-64 lg:h-full">
-                  <Image src={project.img} alt={project.title} fill className="object-cover" />
+                  <Image 
+                    src={project.img} 
+                    alt={project.title} 
+                    fill 
+                    className="object-cover" 
+                    onError={(e) => {
+                      // Fallback in case image doesn't exist
+                      e.target.src = "/projects/project-placeholder.png";
+                    }}
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div className="flex gap-3">
                       {project.live !== "#" && (
@@ -161,7 +193,16 @@ export default function Projects() {
             >
               {/* Image */}
               <div className="relative w-full h-48">
-                <Image src={project.img} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+                <Image 
+                  src={project.img} 
+                  alt={project.title} 
+                  fill 
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  onError={(e) => {
+                    // Fallback in case image doesn't exist
+                    e.target.src = "/projects/project-placeholder.png";
+                  }}
+                />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                   {project.live !== "#" && (
                     <a href={project.live} target="_blank" rel="noopener noreferrer" className="p-3 bg-white text-slate-800 rounded-full hover:scale-110 transition-transform">
