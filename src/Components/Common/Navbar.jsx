@@ -66,9 +66,9 @@ export default function Navbar() {
     document.documentElement.classList.toggle('dark', newTheme === 'dark');
   };
 
-  const toggleMoreDropdown = () => {
-    setIsMoreDropdownOpen(!isMoreDropdownOpen);
-  };
+  // const toggleMoreDropdown = () => {
+  //   setIsMoreDropdownOpen(!isMoreDropdownOpen);
+  // };
 
   if (!mounted) return null;
 
@@ -117,7 +117,7 @@ export default function Navbar() {
             ))}
 
             {/* More Dropdown */}
-            <div className="relative" ref={dropdownRef}>
+            {/* <div className="relative" ref={dropdownRef}>
               <button
                 onClick={toggleMoreDropdown}
                 className="flex items-center px-4 py-2 font-medium text-slate-700 dark:text-slate-300"
@@ -153,7 +153,7 @@ export default function Navbar() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
+            </div> */}
           </div>
 
           {/* Desktop CTA Buttons */}
